@@ -4,7 +4,6 @@ package nl.novi.jp.methods.junior;
 /**
  * Deze klasse bevat al de methode met de naam greetName. Deze methode ontvangt ook een input-parameter. Deze
  * input-parameter moet van het datatype String zijn en we noemen deze name binnen de methode.
- *
  * sayGoodbyeToName() is ook al toegevoegd, maar de body (de code tussen de accolades) is nog niet af. Zorg ervoor dat
  * de methode 'Goodbye Henk' uitprint.
  */
@@ -20,6 +19,6 @@ public class JuniorOne {
     }
 
     public static void sayGoodbyeToName(String name) {
-        // write your code here
+   System.out.println("Goodbye " + name);
     }
 }
