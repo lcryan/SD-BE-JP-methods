@@ -7,12 +7,18 @@ package nl.novi.jp.methods.junior;
  * Bedenk zelf een goede Engelse naam voor de methode.
  * <p>
  * Hoe maak je hoofdletters van een String in Java?
-**/
+ **/
 
 public class JuniorFive {
     public void main(String[] args) {
 
         rockbandsInUpperCase("Muse");
+        rockbandsInUpperCase("System of a Down");
+        rockbandsInUpperCase("Nirvana");
+        rockbandsInUpperCase("Pearl Jam");
     }
+
     public static void rockbandsInUpperCase(String bandName) {
-        System.out.println("bandName = " + bandName);}}
+        System.out.println(bandName.toUpperCase());
+    }
+}
