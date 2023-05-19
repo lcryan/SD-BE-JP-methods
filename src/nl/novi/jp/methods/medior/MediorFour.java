@@ -3,7 +3,8 @@ package nl.novi.jp.methods.medior;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/*
+ *
  * Uitdagend!
  * Gegeven: Een methode die string per character in een List stopt (numberStringToArrayList).
  * Gegeven: Een methode die een getal ontvangt en deze vertaalt naar een String (numberListToStringList).
@@ -31,7 +32,7 @@ public class MediorFour {
     public static List<Integer> numberStringToArrayList(String numbers) {
         List<Integer> numberList = new ArrayList<>();
 
-        for(char character : numbers.toCharArray()) {
+        for (char character : numbers.toCharArray()) {
             numberList.add(Integer.parseInt(String.valueOf(character)));
         }
         return numberList;
@@ -45,7 +46,7 @@ public class MediorFour {
     }
 
     public static String numberToWord(int number) {
-        switch(number) {
+        switch (number) {
             case 0:
                 return "zero";
             case 1:
@@ -72,6 +73,16 @@ public class MediorFour {
     }
 
     //TODO Maak deze methode af.
+
+    public static List<String> numbersListToStringList(List<Integer> numbers) {
+        List<String> wordNumbers = new ArrayList<>();
+        for (int i = 0; i < numbers.size(); i++) {
+            String result = numberToWord(numbers.get(i));
+            wordNumbers.add(result);
+        }
+        return wordNumbers;
+    }
+
     public static void printNumbers() {
 
     }
