@@ -24,18 +24,18 @@ import java.util.List;
 public class MediorFour {
 
     public static void main(String[] args) {
-
         List<Integer> result = numberStringToArrayList("123123145");
-
+        List<String> resultTwo = numbersListToStringList(result);
+        printNumbers(resultTwo);
     }
 
     public static List<Integer> numberStringToArrayList(String numbers) {
         List<Integer> numberList = new ArrayList<>();
 
         for (char character : numbers.toCharArray()) {
-            numberList.add(Integer.parseInt(String.valueOf(character)));
+            numberList.add(Integer.parseInt(String.valueOf(character))); //turns char into String //
         }
-        return numberList;
+        return numberList; //here we get a numberList - see above integer -- //
     }
 
     //TODO: Maak deze methode af.
@@ -83,8 +83,12 @@ public class MediorFour {
         return wordNumbers;
     }
 
-    public static void printNumbers() {
+    public static void printNumbers(List<String> strings) {
 
+        String result = "";
+        for (String s : strings) {
+            result = result + s + "-";
+        } //string s staat voor elke string in de string lijst//
+        System.out.println(result);
     }
-
 }
